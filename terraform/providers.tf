@@ -16,6 +16,7 @@ provider "helm" {
     # config_path = "~/.kube/config"
     host                   = module.eks.cluster_endpoint
     # cluster_certificate = base64decode(module.eks.cluster_certificate)
+    cluster_ca_certificate = base64decode(module.eks.cluster_certificate_authority_data)
   }
 }
 
