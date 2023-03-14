@@ -11,4 +11,6 @@ variable "kube_config" {
   default = "~/.kube/config"
 }
 variable "kube-version" {
+  type = string
+  default = "36.2.0"
 }
